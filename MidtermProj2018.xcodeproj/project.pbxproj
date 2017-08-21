@@ -13,6 +13,8 @@
 		1154F5EC1F4B878700176245 /* MidtermProj2018.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1154F5EA1F4B878700176245 /* MidtermProj2018.xcdatamodeld */; };
 		1154F5EE1F4B878700176245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1154F5ED1F4B878700176245 /* Assets.xcassets */; };
 		1154F5F11F4B878700176245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1154F5EF1F4B878700176245 /* LaunchScreen.storyboard */; };
+		1154F5F91F4B87D400176245 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1154F5F81F4B87D400176245 /* GoogleService-Info.plist */; };
+		E38A3FE93E7A3079497544FA /* Pods_MidtermProj2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E60D9AD84207F6BBA5F58FA /* Pods_MidtermProj2018.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		1154F5ED1F4B878700176245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1154F5F01F4B878700176245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1154F5F21F4B878700176245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1154F5F81F4B87D400176245 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E60D9AD84207F6BBA5F58FA /* Pods_MidtermProj2018.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MidtermProj2018.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48346C8BF4A441E08002E925 /* Pods-MidtermProj2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermProj2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-MidtermProj2018/Pods-MidtermProj2018.release.xcconfig"; sourceTree = "<group>"; };
+		D128B818D3E6CDCF5E904C72 /* Pods-MidtermProj2018.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermProj2018.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MidtermProj2018/Pods-MidtermProj2018.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38A3FE93E7A3079497544FA /* Pods_MidtermProj2018.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08B2F1E0092AF72377A8F632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E60D9AD84207F6BBA5F58FA /* Pods_MidtermProj2018.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1154F5D71F4B878700176245 = {
 			isa = PBXGroup;
 			children = (
 				1154F5E21F4B878700176245 /* MidtermProj2018 */,
 				1154F5E11F4B878700176245 /* Products */,
+				26086614F65916F82944697D /* Pods */,
+				08B2F1E0092AF72377A8F632 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,18 @@
 				1154F5EF1F4B878700176245 /* LaunchScreen.storyboard */,
 				1154F5F21F4B878700176245 /* Info.plist */,
 				1154F5EA1F4B878700176245 /* MidtermProj2018.xcdatamodeld */,
+				1154F5F81F4B87D400176245 /* GoogleService-Info.plist */,
 			);
 			path = MidtermProj2018;
+			sourceTree = "<group>";
+		};
+		26086614F65916F82944697D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D128B818D3E6CDCF5E904C72 /* Pods-MidtermProj2018.debug.xcconfig */,
+				48346C8BF4A441E08002E925 /* Pods-MidtermProj2018.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1154F5F51F4B878700176245 /* Build configuration list for PBXNativeTarget "MidtermProj2018" */;
 			buildPhases = (
+				8F24B7C57620ACEACF3DF18E /* [CP] Check Pods Manifest.lock */,
 				1154F5DC1F4B878700176245 /* Sources */,
 				1154F5DD1F4B878700176245 /* Frameworks */,
 				1154F5DE1F4B878700176245 /* Resources */,
+				62E0F98CD9BC7442364374B3 /* [CP] Embed Pods Frameworks */,
+				D463B3AEDC2F34407161B4B8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +157,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				1154F5F11F4B878700176245 /* LaunchScreen.storyboard in Resources */,
+				1154F5F91F4B87D400176245 /* GoogleService-Info.plist in Resources */,
 				1154F5EE1F4B878700176245 /* Assets.xcassets in Resources */,
 				1154F5E91F4B878700176245 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62E0F98CD9BC7442364374B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MidtermProj2018/Pods-MidtermProj2018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MidtermProj2018/Pods-MidtermProj2018-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F24B7C57620ACEACF3DF18E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MidtermProj2018-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D463B3AEDC2F34407161B4B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MidtermProj2018/Pods-MidtermProj2018-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1154F5DC1F4B878700176245 /* Sources */ = {
@@ -260,6 +351,7 @@
 		};
 		1154F5F61F4B878700176245 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D128B818D3E6CDCF5E904C72 /* Pods-MidtermProj2018.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MidtermProj2018/Info.plist;
@@ -272,6 +364,7 @@
 		};
 		1154F5F71F4B878700176245 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48346C8BF4A441E08002E925 /* Pods-MidtermProj2018.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MidtermProj2018/Info.plist;
