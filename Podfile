@@ -7,11 +7,10 @@ target 'MidtermProj2018' do
 
   # Pods for MidtermProj2018
 
-pod 'Firebase'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
-pod 'Firebase/Database'
-
 
 
 end
